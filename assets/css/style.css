@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(167, 160, 153);
+}
+
+.header {
+  background: greenyellow; /*Warna Latar*/
+  color: black; /*Warna Tulisan*/
+  padding: 20px 0; /*Ukuran canvas*/
+  text-align: center; /*rata tengah*/
+  font-family: monospace; /*Ubah font*/
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 30px; /*Ukuran Font*/
+}
+
+.main-content {
+    padding: 40px 20px;
+    text-align: center;
+    align-items: center;
+    content: center;
+}
+
+.main-content h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.main-content p {
+    font-size: 20px;
+    color: white;
+}
+
+.cta-button {
+    background-color: #27a01c;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
