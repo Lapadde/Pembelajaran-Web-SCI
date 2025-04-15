@@ -1,6 +1,4 @@
 ```markdown
-# README.md
-
 ## Deskripsi Proyek
 
 Proyek ini adalah sebuah landing page sederhana untuk **Study Club Informatika (SCI)**. Halaman ini dirancang untuk memberikan informasi dasar tentang organisasi mahasiswa ini, termasuk tujuan dan layanan yang ditawarkan.  Landing page ini menggunakan CSS untuk mengatur tampilan dan gaya visualnya.
@@ -78,7 +76,15 @@ Berikut adalah penjelasan detail dari setiap bagian dalam file `index.html`:
 
 File `style.css` berisi aturan CSS yang mengatur tampilan visual landing page. Berikut penjelasan detailnya:
 
-### `body`
+```markdown
+# Study Club Informatika (SCI) Landing Page - Penjelasan CSS
+
+## Deskripsi
+File CSS ini digunakan untuk memberikan styling pada halaman landing page Study Club Informatika (SCI). Berikut adalah penjelasan lengkap untuk setiap class dan selector yang digunakan dalam file CSS.
+
+## Kode CSS dan Penjelasan
+
+### 1. Selector `body`
 
 ```css
 body {
@@ -88,23 +94,149 @@ body {
 }
 ```
 
-- `margin: 0;`: Menghapus margin default pada elemen `body`, sehingga konten menempel pada tepi browser.
-- `font-family: Arial, Helvetica, sans-serif;`: Menentukan font utama halaman menjadi Arial, jika tidak tersedia, maka Helvetica, dan sebagai fallback sans-serif.
-- `background-color: rgb(167, 160, 153);`: Mengatur warna latar belakang halaman menjadi abu-abu muda (`rgb(167, 160, 153)`).
+- `margin: 0;`\
+  Menghilangkan margin default yang biasanya ditambahkan oleh browser pada elemen body. Ini memastikan bahwa konten halaman menempel pada tepi jendela browser tanpa ruang kosong.
 
-### `.header`
+- `font-family: Arial, Helvetica, sans-serif;`\
+  Mengatur font default untuk seluruh halaman menjadi Arial, dengan fallback ke Helvetica dan sans-serif jika Arial tidak tersedia. Ini memberikan tampilan yang bersih dan modern.
+
+- `background-color: rgb(167, 160, 153);`\
+  Mengatur warna latar belakang halaman menjadi warna abu-abu keemasan, memberikan nuansa yang hangat dan ramah.
+
+### 2. Class `.header`
 
 ```css
 .header {
-  background: greenyellow; /*Warna Latar*/
-  color: black; /*Warna Tulisan*/
-  padding: 20px 0; /*Ukuran canvas*/
-  text-align: center; /*rata tengah*/
-  font-family: monospace; /*Ubah font*/
+  background: greenyellow; /* Warna Latar */
+  color: black; /* Warna Tulisan */
+  padding: 20px 0; /* Ukuran Padding */
+  text-align: center; /* Rata Tengah */
+  font-family: monospace; /* Ubah Font */
 }
 ```
 
-- `background: greenyellow;`: Mengatur warna latar belakang header menjadi kuning kehijauan.
-- `color: black;`: Mengatur warna teks header menjadi hitam.
-- `padding: 20px 0;`: Memberikan padding 20px di atas dan bawah header, menciptakan ruang kosong di sekitar teks.
-- `text-align: center;`: Menrata-kan teks di dalam header ke tengah.
+- `background: greenyellow;`\
+  Mengatur warna latar belakang header menjadi hijau kuning, memberikan kontras yang baik dengan teks di dalamnya.
+
+- `color: black;`\
+  Mengatur warna teks dalam header menjadi hitam, memastikan keterbacaan yang baik.
+
+- `padding: 20px 0;`\
+  Menambahkan padding vertikal (atas dan bawah) sebesar 20px, memberikan ruang di dalam header agar konten tidak menempel pada tepi.
+
+- `text-align: center;`\
+  Mengatur teks dalam header agar rata tengah, memberikan tampilan yang lebih terorganisir.
+
+- `font-family: monospace;`\
+  Mengubah font dalam header menjadi monospace, memberikan kesan yang lebih teknis dan formal.
+
+### 3. Selector `.header h1`
+
+```css
+.header h1 {
+    margin: 0;
+    font-size: 30px; /* Ukuran Font */
+}
+```
+
+- `margin: 0;`\
+  Menghilangkan margin default pada elemen h1 di dalam header, memastikan bahwa teks h1 tidak memiliki ruang kosong di sekitarnya.
+
+- `font-size: 30px;`\
+  Mengatur ukuran font untuk h1 menjadi 30px, menjadikannya cukup besar untuk menarik perhatian pengunjung.
+
+### 4. Class `.main-content`
+
+```css
+.main-content {
+    padding: 40px 20px;
+    text-align: center;
+    align-items: center;
+    content: center;
+}
+```
+
+- `padding: 40px 20px;`\
+  Menambahkan padding vertikal sebesar 40px dan horizontal sebesar 20px, memberikan ruang di sekitar konten utama.
+
+- `text-align: center;`\
+  Mengatur teks dalam konten utama agar rata tengah, memberikan tampilan yang lebih teratur.
+
+- `align-items: center;`\
+  Properti ini tidak valid dalam konteks block-level element seperti div. Ini lebih relevan untuk flexbox. Anda mungkin ingin menggunakan `display: flex;` untuk mengaktifkan properti ini.
+
+- `content: center;`\
+  Properti ini tidak valid dalam CSS dan sebaiknya dihapus atau diganti dengan properti yang sesuai.
+
+### 5. Selector `.main-content h1`
+
+```css
+.main-content h1 {
+    margin: 0;
+    font-size: 20px;
+}
+```
+
+- `margin: 0;`\
+  Menghilangkan margin default pada elemen h1 di dalam main-content, memastikan bahwa teks h1 tidak memiliki ruang kosong di sekitarnya.
+
+- `font-size: 20px;`\
+  Mengatur ukuran font untuk h1 di dalam konten utama menjadi 20px, memberikan ukuran yang lebih kecil dibandingkan dengan h1 di header.
+
+### 6. Selector `.main-content p`
+
+```css
+.main-content p {
+    font-size: 20px;
+    color: white;
+}
+```
+
+- `font-size: 20px;`\
+  Mengatur ukuran font untuk paragraf menjadi 20px, memastikan keterbacaan yang baik.
+
+- `color: white;`\
+  Mengatur warna teks paragraf menjadi putih, memberikan kontras yang baik dengan latar belakang yang lebih gelap.
+
+### 7. Class `.cta-button`
+
+```css
+.cta-button {
+    background-color: #27a01c;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+```
+
+- `background-color: #27a01c;`\
+  Mengatur latar belakang tombol dengan warna hijau, memberikan tampilan yang menarik dan mengundang.
+
+- `color: white;`\
+  Mengatur warna teks tombol menjadi putih, memastikan keterbacaan yang baik.
+
+- `padding: 15px 30px;`\
+  Menambahkan padding vertikal sebesar 15px dan horizontal sebesar 30px, memberikan ruang di dalam tombol agar lebih mudah diklik.
+
+- `font-size: 1.2em;`\
+  Mengatur ukuran font tombol menjadi 1.2 kali ukuran font default, membuat teks tombol lebih menonjol.
+
+- `border: none;`\
+  Menghilangkan border default pada tombol, memberikan tampilan yang lebih bersih.
+
+- `border-radius: 5px;`\
+  Mengatur sudut border tombol menjadi bulat dengan radius 5px, memberikan tampilan yang lebih modern.
+
+- `cursor: pointer;`\
+  Mengubah kursor menjadi pointer saat mengarahkan mouse ke tombol, memberikan indikasi visual bahwa tombol dapat diklik.
+
+- `text-decoration: none;`\
+  Menghilangkan dekorasi teks pada tombol, seperti garis bawah, untuk menjaga tampilan yang bersih.
+
+## Penutup
+
+File CSS ini dirancang untuk memberikan tampilan yang menarik pada halaman landing page Study Club Informatika. Dengan menggunakan kombinasi warna, font, dan padding yang tepat, halaman ini bertujuan untuk memberikan pengalaman pengguna yang baik.
